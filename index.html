@@ -16,7 +16,7 @@
 <body style="background-color:#FFFFF0;">
 	<header>
 		<nav class="navbar  navbar-fixed-top navbar-default">
-		    <div class="container" style="background-color:White" >
+		    <div class="container" style="background-color:White;border-color:black">
 			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -26,7 +26,6 @@
 	  
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 			    <ul class="nav navbar-nav ">
-                    <li><a href="#home" title="" style="color:black;font-size:1.25vw">Home</a></li>
                     <li><a href="#about" title="" style="color:black;font-size:1.25vw">About Me</a></li>
                     <li><a href="#education" title="" style="color:black;font-size:1.25vw">Education</a></li>
                     <li><a href="#interests" title="" style="color:black;font-size:1.25vw">Research Interests</a></li>
@@ -44,14 +43,7 @@
 		</nav>
 	</header>
 
-	<!-- home -->
-	<div class="hero-full-container background-image-container white-text-container" id="home" style="background-image: url('./img/mandelbrot.jpg')">
-		<div class="container">
-			<div class="units-row units-split wrap">
-				<div class="unit-80"></div>			
-			</div>
-		</div>
-	</div>
+    <div class="section-container"></div>
 
 	<!-- About -->
     <div class="section-container" id="about">
@@ -62,8 +54,8 @@
                         <h1 class="h2">About Me</h1>
                     </div>
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
-                            <p style="color:Black;font-size:1.15vw">
+                        <div class="col-md-15">
+                            <p style="color:Black;font-size:1.15vw;text-align:justify;line-height:1.5;border:2.5px solid black;padding:25px;background-color:white">
                                 <b> Hello! I'm Anjali. Welcome to my corner of the web. I am a PhD student at the Department of Computational and Data Sciences at the Indian Institute of Science (IISc). Having recently submitted my thesis, I am wrapping up my time at the QUEST lab and preparing for the next chapter in my research career. I have always been fascinated by how complex the natural world is. I find immense joy in using algorithms and modeling to decode and understand the underlying patterns and processes that shape it. </b>
                             </p>
                         </div>
@@ -150,10 +142,10 @@
                         <h1 class="h2">Education</h1>
                     </div>
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
-                            <p style="color:Black;font-size:1.15vw"><b>PhD in Computational and Data Science | IISc Bangalore | CGPA: 9.2 (2020 – 2025) </b> </p>
-                            <p style="color:Black;font-size:1.15vw"><b>M.Tech in Civil Engineering | IISc Bangalore | CGPA: 8.7 (2018 – 2020) </b> </p>
-                            <p style="color:Black;font-size:1.15vw"><b>B.Tech in Civil Engineering | Government College of Engineering, Kannur | 79.27% (2013 – 2017) </b> </p>
+                        <div class="col-md-15">
+                            <p style="color:Black;font-size:1.15vw;line-height:1.5;padding:25px;background-color:white"><b>PhD in Computational and Data Science | IISc Bangalore | CGPA: 9.2 (2020 – 2025) </b> </p>
+                            <p style="color:Black;font-size:1.15vw;line-height:1.5;padding:25px;background-color:white"><b>M.Tech in Civil Engineering | IISc Bangalore | CGPA: 8.7 (2018 – 2020) </b> </p>
+                            <p style="color:Black;font-size:1.15vw;line-height:1.5;padding:25px;background-color:white"><b>B.Tech in Civil Engineering | Government College of Engineering, Kannur | 79.27% (2013 – 2017) </b> </p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +157,7 @@
     <div class="section-container" id="interests">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-15">
                     <div class="section-container-spacer text-center">
                     <h1 class="h2">Research Interests</h1>
                     </div>
@@ -200,9 +192,12 @@
         .skills-item {
             margin-bottom: 20px;
             line-height: 1.75;
+            font-size: 1.15vw;
+            background-color: white;
+            padding: 15px;
         }
         .skill-title {
-            color: #5d2b90; /* A professional purple to match your theme */
+            color: blue; /* A professional purple to match your theme */
             font-weight: bold;
             font-size: 1.15vw;
         }
@@ -227,7 +222,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
+                        <div class="col-md-15">
                             
                             <div class="skills-item">
                                 <span class="skill-title">Modeling & Simulation — </span>
@@ -247,9 +242,9 @@
                             <div class="skills-item">
                                 <span class="skill-title">Scientific Programming — </span>
                                 <span class="skill-details">
-                                    Proficiency in <b>C, C++, Python,</b> and <b>R</b>; 
-                                    <b>TensorFlow</b> and <b>PyTorch</b> for Deep Learning; 
-                                    <b>NetLogo, mesa,</b> and <b>geo-mesa</b> for Agent-Based Modeling.
+                                    <b> Proficiency in C, C++, Python, and R; 
+                                    TensorFlow and PyTorch for Deep Learning; 
+                                    NetLogo, mesa, and geo-mesa for Agent-Based Modeling. </b>
                                 </span>
                             </div>
     
@@ -262,23 +257,29 @@
 
     <style>
         .award-item {
-            padding: 10px 0;
-            border-bottom: 1px solid #e1e1e1;
+            line-height: 1.5;
+            font-size: 1.0vw;
+            padding: 15px;
+            margin-bottom: 20px;
+            line-height: 1;
+            border-left: 3px solid deeppink; /* Accent line for professional look */
+            background-color: whitesmoke;
         }
-        .award-item:last-child {
-            border-bottom: none;
-        }
+
         .award-title {
             font-weight: bold;
-            color: darkmagenta;
-            font-size: 1.15vw;
+            color: blue;
+            font-size: 1.0vw;
+            line-height: 1.75;
         }
+
         .award-org {
             font-style: bold;
             color: black;
             font-size: 1.0vw;
+            
         }
-        /* Mobile scaling */
+
         @media (max-width: 768px) {
             .award-title, .award-org {
                 font-size: 14px;
@@ -295,13 +296,14 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-md-20 col-md-offset-1">
+                        <div class="col-md-20">
                             
                             <div class="award-item">
                                 <span class="award-title">Best Young Researcher Award</span> — 
                                 <span class="award-org">
+                                    <b> International Society for Ecological Modelling (2025) </b>
                                     <a href="https://www.isemworld.org/2025/06/13/the-winners-of-best-young-researcher-paper-award/" target="_blank">
-                                        <b> 8th biennial International Society for Ecological Modelling (2025) </b>
+                                        <b> [link] </b>
                                     </a>
                                 </span>
                             </div>
@@ -360,20 +362,26 @@
         .project-card {
             margin-bottom: 35px;
             padding-bottom: 10px;
+            background-color: rgb(255, 240, 243);
+            border: 2.5px solid black;
+            line-height:1.75;
         }
         .project-title {
             font-weight: bold;
             font-size: 1.25vw;
-            color: black; 
+            color: blue; 
             margin-bottom: 10px;
             display: block;
+            line-height: 1.75;
+            padding: 15px;
+
         }
         .project-list {
             list-style-type: disc;
             margin-left: 20px;
-            color: darkolivegreen;
-            font-size: 1.10vw;
-            line-height: 1.6;
+            color: black;
+            font-size: 1.0vw;
+            line-height: 1.75;
             font-weight: bold;
         }
         .project-list li {
@@ -395,7 +403,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
+                        <div class="col-md-15">
                             
                             <div class="project-card">
                                 <span class="project-title">Spatially Explicit Agent-Based Modeling for Studying Human-Elephant Conflicts (HECs)</span>
@@ -443,8 +451,8 @@
     <style>
         .pub-item {
             margin-bottom: 25px;
-            line-height: 1.6;
-            border-left: 3px solid #5d2b90; /* Accent line for professional look */
+            line-height: 1.75;
+            border-left: 3px solid deeppink; /* Accent line for professional look */
             padding-left: 15px;
         }
         .pub-title {
@@ -454,17 +462,18 @@
             display: block;
         }
         .pub-authors {
-            font-size: 1.05vw;
+            font-size: 1.0vw;
             color: #555;
         }
         .my-name {
-            color: #5d2b90; /* Highlighted author name */
+            color: blue; /* Highlighted author name */
             font-weight: bold;
         }
         .pub-journal {
-            font-style: italic;
-            font-size: 1.05vw;
-            color: #333;
+            font-weight: bold;
+            font-size: 1.0vw;
+            color: deeppink;
+
         }
         .pub-links a {
             font-size: 0.95vw;
@@ -490,7 +499,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
+                        <div class="col-md-15">
     
                             <div class="pub-item">
                                 <span class="pub-title">A Dynamic Data Driven Agent Based Model for Characterizing the Space Utilization of Asian Elephants in Response to Water Availability</span>
@@ -552,14 +561,15 @@
             justify-content: space-between;
             margin-bottom: 5px;
             font-size: 1.10vw;
+            background-color: whitesmoke;
         }
         .exp-org {
             font-weight: bold;
             color: #5d2b90;
         }
         .exp-role {
-            font-style: bold;
-            margin-bottom: 15px;
+            font-weight: bold;
+            margin-bottom: 35px;
             color: black;
             font-size:1.05vw;
         }
@@ -567,12 +577,14 @@
             list-style-type: square;
             margin-left: 20px;
             font-size: 1.10vw;
-            line-height: 1.8;
+            line-height: 1.75;
         }
         .date-text {
-            color: green;
-            font-weight: normal;
+            color: deeppink;
+            font-weight: bold;
             font-size: 1.00vw;
+            line-height: 1.75;
+            background-color: whitesmoke;
         }
         
         /* Mobile scaling */
@@ -594,7 +606,7 @@
                         <h1 class="h2">Research Experiences</h1>
                     </div>
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
+                        <div class="col-md-15">
                             
                             <div class="exp-item">
                                 <div class="exp-row">
@@ -630,12 +642,12 @@
     <div class="section-container" id="teaching">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-15">
                     <div class="section-container-spacer text-center">
                         <h1 class="h2">Teaching Experiences</h1>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-15">
                             <ul class="teaching-list">
                                 <li><b>DS 225-0: Deep Learning</b> <span class="date-text">(Jan – Jul 2025)</span></li>
                                 <li><b>DS 211: Numerical Optimization</b> <span class="date-text">(Aug – Dec 2023)</span></li>
@@ -659,7 +671,7 @@
                         <h1 class="h2">Other Professional Activities & Engagement</h1>
                     </div>
                     <div class="row">
-                        <div class="col-md-15 col-md-offset-1">
+                        <div class="col-md-15">
                             <ul class="other-list">
                                 <li> <b> Poster Presentation in International Society for Ecological Modelling Global Conference </b> <span class="date-text">(2025)</span></li>
                                 <li>  <b> Participant in Winter School on Biodiversity Digital Twins, BioDT School & Hackathon </b> <span class="date-text">(2025)</span></li>
